@@ -11,7 +11,8 @@ class Animal {
 		Animal(const Animal& toCopy);
 		~Animal(void);
 		Animal& operator=(const Animal& toCopy);
-		void makeSound(void);
+		std::string getType(void) const;
+		void makeSound(void) const;
 };
 
 #endif // ANIMAL_H

@@ -20,6 +20,15 @@ Animal& Animal::operator=(const Animal& toCopy) {
 	return (*this);
 }
 
-void Animal::makeSound(void) {
-	std::cout << type << std::endl;
+std::string Animal::getType(void) const {
+	return (type);
+}
+
+void Animal::makeSound(void) const {
+	if (type == "Dog")
+		std::cout << "* Bark *" << std::endl;
+	if (type == "Cat")
+		std::cout << "* Meow *" << std::endl;
+	else
+		std::cout << "* Unknowable terror noises *" << std::endl;
 }

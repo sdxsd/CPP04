@@ -2,10 +2,10 @@
 
 Dog::Dog(void) {
 	std::cout << "Dog constructor called." << std::endl;
-	type = "* Bark *";
+	type = "Dog";
 }
 
-Dog::Dog(const Dog& toCopy) {
+Dog::Dog(const Dog& toCopy): Animal((const Animal&)toCopy) {
 	std::cout << "Dog copy constructor called." << std::endl;
 	type = toCopy.type;
 }
