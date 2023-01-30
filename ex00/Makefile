@@ -2,7 +2,6 @@ NAME = ex00
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
 FILES = \
-		ClapTrap.cpp \
 		main.cpp
 OFILES = $(FILES:.cpp=.o)
 
