@@ -19,3 +19,7 @@ Dog& Dog::operator=(const Dog& toCopy) {
 	this->type = toCopy.type;
 	return (*this);
 }
+
+void Dog::makeSound(void) const {
+	std::cout << "* Bjark Bjark! *" << std::endl;
+}

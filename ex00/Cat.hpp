@@ -9,6 +9,7 @@ class Cat: public Animal {
 		Cat(const Cat& toCopy);
 		~Cat(void);
 		Cat& operator=(const Cat &toCopy);
+		void makeSound(void) const;
 };
 
 #endif // CAT_H

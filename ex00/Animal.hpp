@@ -12,7 +12,7 @@ class Animal {
 		~Animal(void);
 		Animal& operator=(const Animal& toCopy);
 		std::string getType(void) const;
-		void makeSound(void) const;
+		virtual void makeSound(void) const;
 };
 
 #endif // ANIMAL_H
