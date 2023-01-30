@@ -6,9 +6,9 @@
 class Cat: public Animal {
 	public:
 		Cat(void);
-		Cat(Cat& toCopy);
+		Cat(const Cat& toCopy);
 		~Cat(void);
-		Cat& operator=(Cat &toCopy);
+		Cat& operator=(const Cat &toCopy);
 };
 
 #endif // CAT_H
