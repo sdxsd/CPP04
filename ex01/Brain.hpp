@@ -11,6 +11,8 @@ class Brain {
 		Brain(const Brain& squishy);
 		~Brain(void);
 		Brain& operator=(const Brain &toCopy);
+		std::string getIdea(int n) const;
+		void setIdea(int n, std::string str);
 };
 
 #endif // BRAIN_H

@@ -22,3 +22,11 @@ Brain& Brain::operator=(const Brain& toCopy) {
 		this->ideas[i] = toCopy.ideas[i];
 	return (*this);
 }
+
+std::string Brain::getIdea(int n) const {
+	return (this->ideas[n]);
+}
+
+void Brain::setIdea(int n, std::string str) {
+	this->ideas[n] = str;
+}

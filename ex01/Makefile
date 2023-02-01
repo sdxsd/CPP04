@@ -2,6 +2,7 @@ NAME = ex01
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
 FILES = \
+		Brain.cpp \
 		WrongAnimal.cpp \
 		WrongCat.cpp \
 		Animal.cpp \
