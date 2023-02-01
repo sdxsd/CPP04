@@ -8,15 +8,19 @@ Cat::Cat(void) {
 
 Cat::Cat(const Cat& toCopy): Animal((const Animal&)toCopy) {
 	std::cout << "Cat copy constructor called." << std::endl;
+	type = toCopy.type;
+	brain = toCopy.brain;
 }
 
 Cat::~Cat(void) {
 	std::cout << "Cat destructor called." << std::endl;
+	delete brain;
 }
 
 Cat& Cat::operator=(const Cat& toCopy) {
 	std::cout << "Cat = operator called." << std::endl;
 	this->type = toCopy.type;
+	this->brain = toCopy.brain;
 	return (*this);
 }
 
