@@ -3,6 +3,7 @@
 Animal::Animal(void) {
 	std::cout << "Animal constructor called." << std::endl;
 	type = "";
+	brain = NULL;
 }
 
 Animal::Animal(const Animal& toCopy) {

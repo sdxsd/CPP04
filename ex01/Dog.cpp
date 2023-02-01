@@ -3,6 +3,7 @@
 Dog::Dog(void) {
 	std::cout << "Dog constructor called." << std::endl;
 	type = "Dog";
+	brain = new Brain();
 }
 
 Dog::Dog(const Dog& toCopy): Animal((const Animal&)toCopy) {

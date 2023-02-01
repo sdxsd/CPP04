@@ -6,8 +6,8 @@
 
 class Animal {
 	protected:
-		Brain		brain;
 		std::string	type;
+		Brain		*brain;
 	public:
 		Animal(void);
 		Animal(const Animal& toCopy);

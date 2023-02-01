@@ -3,6 +3,7 @@
 Cat::Cat(void) {
 	std::cout << "Cat constructor called." << std::endl;
 	type = "Cat";
+	brain = new Brain();
 }
 
 Cat::Cat(const Cat& toCopy): Animal((const Animal&)toCopy) {
