@@ -2,9 +2,11 @@
 #define ANIMAL_H
 
 #include <iostream>
+#include "Brain.hpp"
 
 class Animal {
 	protected:
+		Brain		brain;
 		std::string	type;
 	public:
 		Animal(void);
