@@ -20,7 +20,8 @@ Dog::~Dog(void) {
 Dog& Dog::operator=(const Dog& toCopy) {
 	std::cout << "Dog = operator called." << std::endl;
 	this->type = toCopy.type;
-	this->brain = toCopy.brain;
+	if (brain != NULL)
+		*this->brain = *toCopy.brain;
 	return (*this);
 }
 

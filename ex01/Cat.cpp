@@ -20,7 +20,8 @@ Cat::~Cat(void) {
 Cat& Cat::operator=(const Cat& toCopy) {
 	std::cout << "Cat = operator called." << std::endl;
 	this->type = toCopy.type;
-	this->brain = toCopy.brain;
+	if (brain != NULL)
+		*this->brain = *toCopy.brain;
 	return (*this);
 }
 
