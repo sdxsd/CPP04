@@ -37,4 +37,6 @@ void Animal::setIdeaInBrain(int n, std::string newIdea) {
 std::string Animal::getIdeaFromBrain(int n) const {
 	if (brain != NULL)
 		return (brain->getIdea(n));
+	else
+		return ("");
 }
