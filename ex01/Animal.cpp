@@ -28,3 +28,13 @@ std::string Animal::getType(void) const {
 void Animal::makeSound(void) const {
 		std::cout << "* Unknowable terror noises *" << std::endl;
 }
+
+void Animal::setIdeaInBrain(int n, std::string newIdea) {
+	if (brain != NULL)
+		brain->setIdea(n, newIdea);
+}
+
+std::string Animal::getIdeaFromBrain(int n) const {
+	if (brain != NULL)
+		return (brain->getIdea(n));
+}
