@@ -8,10 +8,10 @@ class Animal {
 	protected:
 		std::string	type;
 		Brain		*brain;
+		Animal& operator=(const Animal& toCopy);
 	public:
 		Animal(void);
 		virtual ~Animal(void);
-		// virtual Animal& operator=(const Animal& toCopy);
 		virtual void makeSound(void) const = 0;
 		virtual std::string getType(void) const = 0;
 		virtual void setIdeaInBrain(int n, std::string newIdea) = 0;
