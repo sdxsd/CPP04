@@ -7,7 +7,7 @@ class Dog: public Animal {
 	public:
 		Dog(void);
 		Dog(const Dog& toCopy);
-		~Dog(void);
+		virtual ~Dog(void);
 		Dog& operator=(const Dog &toCopy);
 		void makeSound(void) const;
 };

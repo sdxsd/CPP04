@@ -16,7 +16,9 @@ void brain_test(void) {
 	delete Saartje;
 }
 
+// NOTE: Trying to instantiate an Animal here will cause a compilation error.
 int main(void) {
-	// brain_test();
+	brain_test();
 	Cat beast;
+	Dog creature;
 }

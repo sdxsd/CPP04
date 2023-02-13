@@ -7,7 +7,7 @@ class Cat: public Animal {
 	public:
 		Cat(void);
 		Cat(const Cat& toCopy);
-		~Cat(void);
+		virtual ~Cat(void);
 		Cat& operator=(const Cat &toCopy);
 		void makeSound(void) const;
 };
