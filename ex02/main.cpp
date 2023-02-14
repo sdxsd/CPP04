@@ -10,7 +10,7 @@ void brain_test(void) {
 	Saartje->setIdeaInBrain(0, "I don't want Fred to eat my food.");
 	std::cout << "Saartje has idea: " << Saartje->getIdeaFromBrain(0) << " at position 0" << std::endl;
 	*Fred = *Saartje;
-	std::cout << "\"*after *Fred = *Saartje;\" Fred has idea: " << Fred->getIdeaFromBrain(0) << " at position 0"
+	std::cout << "\"after *Fred = *Saartje;\" Fred has idea: " << Fred->getIdeaFromBrain(0) << " at position 0"
 			  << std::endl;
 	delete Fred;
 	delete Saartje;

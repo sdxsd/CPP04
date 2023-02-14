@@ -12,9 +12,9 @@ class Animal {
 		Animal(void);
 		virtual ~Animal(void);
 		virtual void makeSound(void) const = 0;
-		std::string getType(void) const;
 		void setIdeaInBrain(int n, std::string newIdea);
 		std::string getIdeaFromBrain(int n) const;
+		std::string getType(void) const;
 };
 
 #endif // ANIMAL_H

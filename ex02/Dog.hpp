@@ -11,8 +11,6 @@ class Dog: public Animal {
 		Dog& operator=(const Dog &toCopy);
 		void makeSound(void) const;
 		std::string getType(void) const;
-		void setIdeaInBrain(int n, std::string newIdea);
-		std::string getIdeaFromBrain(int n) const;
 };
 
 #endif // DOG_H

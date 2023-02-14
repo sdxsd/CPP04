@@ -11,8 +11,6 @@ class Cat: public Animal {
 		Cat& operator=(const Cat &toCopy);
 		void makeSound(void) const;
 		std::string getType(void) const;
-		void setIdeaInBrain(int n, std::string newIdea);
-		std::string getIdeaFromBrain(int n) const;
 };
 
 #endif // CAT_H
