@@ -10,7 +10,7 @@ class Animal {
 		Brain		*brain;
 	public:
 		Animal(void);
-		virtual ~Animal(void);
+		virtual ~Animal(void) = 0;
 		virtual void makeSound(void) const = 0;
 		void setIdeaInBrain(int n, std::string newIdea);
 		std::string getIdeaFromBrain(int n) const;
