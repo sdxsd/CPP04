@@ -3,11 +3,12 @@
 Animal::Animal(void) {
 	std::cout << "Animal constructor called." << std::endl;
 	type = "";
-	brain = NULL;
+	brain = new Brain();
 }
 
 Animal::~Animal(void) {
 	std::cout << "Animal destructor called." << std::endl;
+	delete brain;
 }
 
 std::string Animal::getType(void) const {

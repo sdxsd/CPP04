@@ -3,7 +3,6 @@
 Dog::Dog(void) {
 	std::cout << "Dog constructor called." << std::endl;
 	type = "Dog";
-	brain = new Brain();
 }
 
 Dog::Dog(const Dog& toCopy): Animal((const Animal&)toCopy) {
@@ -14,7 +13,6 @@ Dog::Dog(const Dog& toCopy): Animal((const Animal&)toCopy) {
 
 Dog::~Dog(void) {
 	std::cout << "Dog destructor called." << std::endl;
-	delete brain;
 }
 
 Dog& Dog::operator=(const Dog& toCopy) {

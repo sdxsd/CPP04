@@ -3,7 +3,6 @@
 Cat::Cat(void) {
 	std::cout << "Cat constructor called." << std::endl;
 	type = "Cat";
-	brain = new Brain();
 }
 
 Cat::Cat(const Cat& toCopy): Animal((const Animal&)toCopy) {
@@ -14,7 +13,6 @@ Cat::Cat(const Cat& toCopy): Animal((const Animal&)toCopy) {
 
 Cat::~Cat(void) {
 	std::cout << "Cat destructor called." << std::endl;
-	delete brain;
 }
 
 Cat& Cat::operator=(const Cat& toCopy) {
