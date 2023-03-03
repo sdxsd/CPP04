@@ -9,6 +9,7 @@ int main(void) {
 	const WrongAnimal* jeop = new WrongCat();
 	std::cout << "i->getType(): " << i->getType() << std::endl;
 	std::cout << "j->getType(): " << j->getType() << std::endl;
+	std::cout << "meta->getType(): " << meta->getType() << std::endl;
 	std::cout << "Cat says: ";
 	i->makeSound(); //will output the cat sound!
 	std::cout << "Dog says: ";
