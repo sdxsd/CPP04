@@ -2,7 +2,7 @@
 
 Animal::Animal(void) {
 	std::cout << "Animal constructor called." << std::endl;
-	type = "";
+	type = "Unspeakable Horror";
 }
 
 Animal::Animal(const Animal& toCopy) {
