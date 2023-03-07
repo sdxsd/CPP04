@@ -24,9 +24,15 @@ Brain& Brain::operator=(const Brain& toCopy) {
 }
 
 std::string Brain::getIdea(int n) const {
-	return (this->ideas[n]);
+	if (n >= 0 && n <= 99)
+		return (this->ideas[n]);
+	else
+		return ("Trying to think outside the box are we?");
 }
 
 void Brain::setIdea(int n, std::string str) {
-	this->ideas[n] = str;
+	if (n >= 0 && n <= 99)
+		this->ideas[n] = str;
+	else
+		std::cout << "Trying to set idea out of range." << std::endl;
 }

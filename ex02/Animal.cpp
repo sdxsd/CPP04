@@ -11,6 +11,14 @@ Animal::~Animal(void) {
 	delete brain;
 }
 
+Animal& Animal::operator=(const Animal& toCopy) {
+	std::cout << "Animal = operator called." << std::endl;
+	this->type = toCopy.type;
+	if (brain != NULL)
+		*this->brain = *toCopy.brain;
+	return (*this);
+}
+
 std::string Animal::getType(void) const {
 	return (type);
 }
