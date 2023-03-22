@@ -3,8 +3,8 @@
 
 void brain_test(void) {
 	int		fail = false;
-	Animal* Fred = new Cat();
-	Animal* Saartje = new Cat();
+	Cat* Fred = new Cat();
+	Cat* Saartje = new Cat();
 
 	Fred->setIdeaInBrain(0, "I want to eat Saartjes food.");
 	std::cout << "Fred has idea: " << Fred->getIdeaFromBrain(0) << " at position 0" << std::endl;

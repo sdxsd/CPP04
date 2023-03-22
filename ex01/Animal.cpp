@@ -3,7 +3,6 @@
 Animal::Animal(void) {
 	std::cout << "Animal constructor called." << std::endl;
 	type = "";
-	brain = NULL;
 }
 
 Animal::Animal(const Animal& toCopy) {
@@ -18,8 +17,6 @@ Animal::~Animal(void) {
 Animal& Animal::operator=(const Animal& toCopy) {
 	std::cout << "Animal = operator called." << std::endl;
 	this->type = toCopy.type;
-	if (brain != NULL)
-		*this->brain = *toCopy.brain;
 	return (*this);
 }
 
@@ -29,16 +26,4 @@ std::string Animal::getType(void) const {
 
 void Animal::makeSound(void) const {
 		std::cout << "* Unknowable terror noises *" << std::endl;
-}
-
-void Animal::setIdeaInBrain(int n, std::string newIdea) {
-	if (brain != NULL)
-		brain->setIdea(n, newIdea);
-}
-
-std::string Animal::getIdeaFromBrain(int n) const {
-	if (brain != NULL)
-		return (brain->getIdea(n));
-	else
-		return ("");
 }

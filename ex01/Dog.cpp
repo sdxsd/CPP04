@@ -28,3 +28,15 @@ Dog& Dog::operator=(const Dog& toCopy) {
 void Dog::makeSound(void) const {
 	std::cout << "* Bjark Bjark! *" << std::endl;
 }
+
+void Dog::setIdeaInBrain(int n, std::string newIdea) {
+	if (brain != NULL)
+		brain->setIdea(n, newIdea);
+}
+
+std::string Dog::getIdeaFromBrain(int n) const {
+	if (brain != NULL)
+		return (brain->getIdea(n));
+	else
+		return ("");
+}

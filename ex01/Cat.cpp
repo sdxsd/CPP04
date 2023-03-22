@@ -28,3 +28,15 @@ Cat& Cat::operator=(const Cat& toCopy) {
 void Cat::makeSound(void) const {
 	std::cout << "* Meow *" << std::endl;
 }
+
+void Cat::setIdeaInBrain(int n, std::string newIdea) {
+	if (brain != NULL)
+		brain->setIdea(n, newIdea);
+}
+
+std::string Cat::getIdeaFromBrain(int n) const {
+	if (brain != NULL)
+		return (brain->getIdea(n));
+	else
+		return ("");
+}
