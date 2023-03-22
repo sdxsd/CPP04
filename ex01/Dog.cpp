@@ -9,7 +9,8 @@ Dog::Dog(void) {
 Dog::Dog(const Dog& toCopy): Animal((const Animal&)toCopy) {
 	std::cout << "Dog copy constructor called." << std::endl;
 	type = toCopy.type;
-	brain = toCopy.brain;
+	brain = new Brain();
+	*brain = *toCopy.brain;
 }
 
 Dog::~Dog(void) {
@@ -22,6 +23,10 @@ Dog& Dog::operator=(const Dog& toCopy) {
 	this->type = toCopy.type;
 	if (brain != NULL)
 		*this->brain = *toCopy.brain;
+	else {
+		brain = new Brain();
+		*this->brain = *toCopy.brain;
+	}
 	return (*this);
 }
 

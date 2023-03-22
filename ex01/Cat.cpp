@@ -9,7 +9,8 @@ Cat::Cat(void) {
 Cat::Cat(const Cat& toCopy): Animal((const Animal&)toCopy) {
 	std::cout << "Cat copy constructor called." << std::endl;
 	type = toCopy.type;
-	brain = toCopy.brain;
+	brain = new Brain();
+	*brain = *toCopy.brain;
 }
 
 Cat::~Cat(void) {
@@ -22,6 +23,10 @@ Cat& Cat::operator=(const Cat& toCopy) {
 	this->type = toCopy.type;
 	if (brain != NULL)
 		*this->brain = *toCopy.brain;
+	else {
+		brain = new Brain();
+		*this->brain = *toCopy.brain;
+	}
 	return (*this);
 }
 
