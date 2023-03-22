@@ -2,9 +2,10 @@
 #include "Cat.hpp"
 
 void brain_test(void) {
-	int		fail = false;
+	int	fail = false;
 	Cat* Fred = new Cat();
 	Cat* Saartje = new Cat();
+	Cat	zat(*Saartje);
 
 	Fred->setIdeaInBrain(0, "I want to eat Saartjes food.");
 	std::cout << "Fred has idea: " << Fred->getIdeaFromBrain(0) << " at position 0" << std::endl;
